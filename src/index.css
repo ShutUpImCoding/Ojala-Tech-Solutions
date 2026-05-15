@@ -1,0 +1,111 @@
+:root {
+  --bg: #0D1B0C;
+  --surface: #1A3317;
+  --green: #4A9E3F;
+  --sage: #7BC870;
+  --light: #D8EDD2;
+
+  --green-hover: #3a8430;
+  --border: #2A4A26;
+  --text-muted: #8AAF84;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  --font-heading: 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+
+  font: 18px/1.6 var(--font-body);
+  color: var(--light);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--light);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--light);
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h3 { font-size: 1.25rem; }
+
+p { margin: 0; }
+
+a {
+  color: var(--sage);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light);
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--green);
+  color: var(--light);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--green);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--green-hover);
+  border-color: var(--green-hover);
+  color: var(--light);
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--sage);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid var(--sage);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: var(--sage);
+  color: var(--bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
+}

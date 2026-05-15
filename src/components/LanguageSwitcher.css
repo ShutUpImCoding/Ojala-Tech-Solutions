@@ -1,0 +1,36 @@
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: 4px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.lang-switcher:hover {
+  border-color: var(--green);
+}
+
+.lang-option {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  transition: color 0.2s;
+  font-family: inherit;
+  opacity: 0.5;
+}
+
+.lang-option.active {
+  color: var(--light);
+  opacity: 1;
+}
+
+.lang-divider {
+  color: var(--border);
+  font-size: 0.75rem;
+  font-family: inherit;
+}

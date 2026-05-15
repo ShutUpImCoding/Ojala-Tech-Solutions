@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#0D1B0C"/>
+  <!-- O ring -->
+  <circle cx="16" cy="16" r="11" fill="#4A9E3F"/>
+  <circle cx="16" cy="16" r="6.5" fill="#0D1B0C"/>
+  <!-- Chevron / code arrow -->
+  <polyline points="13.5,13 17.5,16 13.5,19" fill="none" stroke="#7BC870" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

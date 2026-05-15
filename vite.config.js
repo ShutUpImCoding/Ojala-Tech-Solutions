@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // e.g. base: '/OjalaTechSolutions/'
 export default defineConfig({
   plugins: [react()],
-  base: '/OjalaTechSolutions/',
+  base: '/Ojala-Tech-Solutions/',
 })
